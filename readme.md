@@ -1,10 +1,12 @@
 # Laravel Boot
 Laravel Boot installed some developers commonly used libraries, like :
-1. [Laravel 5.1.24(LTS)](https://github.com/laravel/laravel)
-2. [Bower 1.6.5](https://github.com/bower/bower)
-3. [JQuery 2.1.4](https://github.com/jquery/jquery)
-4. [Bootstrap Sass 3.3.5](https://github.com/twbs/bootstrap-sass)
-5. [Font Awesome 4.4.0](https://github.com/FortAwesome/Font-Awesome)
+
+1.  [Laravel 5.1.24(LTS)](https://github.com/laravel/laravel)
+2.  [Bower 1.6.5](https://github.com/bower/bower)
+3.  [JQuery 2.1.4](https://github.com/jquery/jquery)
+4.  [Bootstrap Sass 3.3.5](https://github.com/twbs/bootstrap-sass)
+5.  [Font Awesome 4.4.0](https://github.com/FortAwesome/Font-Awesome)
+
 
 and integrate of these projects together.
 feel free to modify the variables of Bootstrap in your Laravel 5.1 project.
