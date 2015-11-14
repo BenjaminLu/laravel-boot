@@ -19,7 +19,7 @@ npm install
 ```
 
 ## Run Gulp
-this command will move all the fonts files of Bootstrap and Font Awesome into right location under the `public` folder, and compile all the scss files of Bootstrap and Font Awesome, compressing them into all.css, finally compress javascript files of Bootstrap and jQuery in to all.js.
+this command will move all the fonts files of Bootstrap and Font Awesome into right location under the `public` folder, and compile all the scss files of Bootstrap and Font Awesome, compressing them into all.css, finally compress javascript files of Bootstrap and jQuery into all.js.
 ```
 gulp
 ```
