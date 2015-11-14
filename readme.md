@@ -1,4 +1,4 @@
-## Laravel Boot
+# Laravel Boot
 Laravel Boot installed some developers commonly used libraries, like :
 1. [Laravel 5.1.24(LTS)](https://github.com/laravel/laravel)
 2. [Bower 1.6.5](https://github.com/bower/bower)
@@ -9,33 +9,33 @@ Laravel Boot installed some developers commonly used libraries, like :
 and integrate of these projects together.
 feel free to modify the variables of Bootstrap in your Laravel 5.1 project.
 
-### Installation
+## Installation
 first, you need to install PHP, composer and node.js, once after you install the execution environment, type the commands below in the project working directory.
 ```
 composer install
 npm install
 ```
 
-### Run Gulp
+## Run Gulp
 this command will move all the fonts files of Bootstrap and Font Awesome into right location under the `public` folder, and compile all the scss files of Bootstrap and Font Awesome, compressing them into all.css, finally compress javascript files of Bootstrap and jQuery in to all.js.
 ```
 gulp
 ```
 
-### Include in Your View Files
+## Include in Your View Files
 
 put this line into <head></head>.
-```
+```html
 <link rel="stylesheet" href="{{asset('css/all.css')}}"/>
 ```
 
 put this line before </body>.
-```
+```html
 <script src="{{asset('js/all.js')}}"></script>
 ```
 
 a simple app.blade.php show case.
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
