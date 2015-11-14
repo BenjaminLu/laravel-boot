@@ -26,12 +26,12 @@ gulp
 
 ## Include in Your View Files
 
-put this line into <head></head>.
+put this line into head tag.
 ```html
 <link rel="stylesheet" href="{{asset('css/all.css')}}"/>
 ```
 
-put this line before </body>.
+put this line before body closing tag.
 ```html
 <script src="{{asset('js/all.js')}}"></script>
 ```
