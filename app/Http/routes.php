@@ -15,3 +15,4 @@ Route::get('/', function() {
 });
 Route::resource('/article', 'ArticleController');
 Route::controller('/user', 'UserController');
+Route::controller('/auth', 'Auth\AuthController');

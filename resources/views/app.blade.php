@@ -6,7 +6,7 @@
     @yield('meta')
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>iCollect @yield('title')</title>
-    <link rel="stylesheet" href="{{ asset('css/all.css') }}"/>
+    <link rel="stylesheet" href="{{ elixir('css/all.css') }}"/>
     @yield('css')
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -51,7 +51,7 @@
 @yield('content')
 
 @yield('footer')
-<script src="{{asset('js/all.js')}}"></script>
+<script src="{{elixir('js/all.js')}}"></script>
 <script>
     $( document ).ready(function() {
         console.log( "ready!" );

@@ -1,5 +1,5 @@
 var elixir = require('laravel-elixir');
-
+require('laravel-elixir-remove');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -24,7 +24,7 @@ elixir(function (mix) {
             paths.bootstrap + 'fonts/',
             paths.fontAwesome + 'fonts/'
         ],
-        'public/fonts/'
+        'public/build/fonts/'
     );
 
     mix.sass([
@@ -41,5 +41,12 @@ elixir(function (mix) {
     mix.scripts([
         paths.jquery + 'jquery.js',
         paths.bootstrap + 'javascripts/bootstrap.js'
-    ]);
+    ]).babel([
+        'app.js'
+    ], 'public/js/app.js').scripts([
+        'all.js',
+        'app.js'
+    ], 'public/js/all.js', 'public/js').remove(['public/js/app.js', 'public/js/app.js.map']);
+
+    mix.version(['css/all.css', 'js/all.js']).remove(['public/js', 'public/css']);
 });
