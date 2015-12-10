@@ -28,12 +28,12 @@ gulp
 
 put this line into head tag.
 ```html
-<link rel="stylesheet" href="{{asset('css/all.css')}}"/>
+<link rel="stylesheet" href="{{elixir('css/all.css')}}"/>
 ```
 
 put this line before body closing tag.
 ```html
-<script src="{{asset('js/all.js')}}"></script>
+<script src="{{elixir('js/all.js')}}"></script>
 ```
 
 a simple app.blade.php show case.
@@ -47,7 +47,7 @@ a simple app.blade.php show case.
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     @yield('meta')
     
-    <link rel="stylesheet" href="{{asset('css/all.css')}}"/>
+    <link rel="stylesheet" href="{{elixir('css/all.css')}}"/>
     @yield('css')
     
 	<!--[if lt IE 9]>
@@ -65,7 +65,7 @@ a simple app.blade.php show case.
     </div>
 	
     @yield('footer')
-    <script src="{{asset('js/all.js')}}"></script>
+    <script src="{{elixir('js/all.js')}}"></script>
     <script>
     $(document).ready(function() {
         console.log( "ready!" );
